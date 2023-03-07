@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EranKhedmati/Todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EranKhedmati/Todo/issues"
+  },
+  "homepage": "https://github.com/EranKhedmati/Todo#readme",
+  "dependencies": {
+    "electron": "^23.1.2"
+  }
+}

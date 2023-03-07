@@ -1,0 +1,37 @@
+/* Font Awesome */
+@import url("../fonts/font\ awesome/all.css");
+
+/* Nunito Sans */
+@font-face {
+    font-family: "nunitoLight";
+    src: url("../fonts/Nunito\ Sans/NunitoSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunitoRegular";
+    src: url("../fonts/Nunito\ Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunitoSemiBold";
+    src: url("../fonts/Nunito\ Sans/NunitoSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "nunitoBold";
+    src: url("../fonts/Nunito\ Sans/NunitoSans-Bold.ttf");
+}
+
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "nunitoRegular";
+}
