@@ -10,16 +10,70 @@
     <!-- Style componetns -->
     <link rel="stylesheet" href="../src/styleComponents/main.css">
     <link rel="stylesheet" href="../src/styleComponents/grid.css">
-
+    <link rel="stylesheet" href="../src/styleComponents/Panel.css">
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container text-dark">
+
+        <!-- Title bar start -------------------------------------------------------------- -->
         <section class="title-bar"></section>
-        <section class="panel"></section>
+        <!-- Title bar end -------------------------------------------------------------- -->
+
+        <!-- Panel START ------------------------------------------------------------------- -->
+        <section class="panel">
+
+            <!-- Profile START -->
+            <div class="profile">
+                <i class="fa-solid fa-circle-user user-icon"></i>
+                <div class="username" id="panel_profile_username">Erfan Khedmati fsdf</div>
+            </div>
+            <!-- Profile END -->
+
+            <!-- Page button START -->
+            <ul class="panel-btn-list">
+                <!-- Set two div for justify them -->
+                <div>
+                    <li class="panel-btn">
+                        <i class="fa-solid fa-inbox panel-btn-icon panel-btn-active"></i>
+                        <p>Inbox</p>
+                    </li>
+                    <li class="panel-btn">
+                        <i class="fa-solid fa-square-check panel-btn-icon"></i>
+                        <p>Complate</p>
+                    </li>
+                    <li class="panel-btn">
+                        <i class="fa-solid fa-bell panel-btn-icon"></i>
+                        <p>Reminder</p>
+                    </li>
+                    <li class="panel-btn">
+                        <i class="fa-solid fa-chart-simple panel-btn-icon"></i>
+                        <p>Performance</p>
+                    </li>
+                </div>
+                <div>
+                    <div class="panel-setting-btn">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="panel-logout-btn">
+                        <p>Log out</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </ul>
+            <!-- Page button END -->
+
+        </section>
+        <!-- Panel END ------------------------------------------------------------------- -->
+
+        <!-- Content START ----------------------------------------------------------------- -->
         <section class="content"></section>
+        <!-- Content END ----------------------------------------------------------------- -->
     </div>
+
+    <!-- Script compoent -->
+    <script src="../src/scriptComponent/Panel.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 /* Font Awesome */
-@import url("../fonts/font\ awesome/all.css");
+@import url("../fonts/fontawesome-free-6.3.0-web/css/all.css");
 
 /* Nunito Sans */
 @font-face {
@@ -28,6 +28,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 200ms;
 }
 
 body {
@@ -41,4 +42,8 @@ body {
     height: 100%;
     background: #ECECEC;
     border-radius: 10px;
+}
+
+.text-dark {
+    color: #212121;
 }

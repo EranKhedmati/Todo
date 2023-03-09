@@ -1,0 +1,104 @@
+:root {
+    --dark: #212121;
+    --light: #fff;
+    --darkGray: #323232;
+    --gray: #545454;
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0 3px 0;
+    margin: 0 3px 0 3px;
+    border-bottom: 1px solid #999;
+}
+
+.user-icon {
+   font-size: 35px;
+}
+
+.username {
+    width: 110px;
+    font-size: 15px;
+    font-family: "nunitoSemiBold";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
+}
+
+/* Panel button links */
+
+.panel-btn-list {
+    padding: 30px 10px 10px 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 74px);
+}
+
+.panel-btn-list>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.panel-btn-list>div:last-child {
+    gap: 30px;
+    align-items: center;
+}
+
+.panel-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.panel-btn:hover{
+    color: var(--gray);
+}
+
+.panel-btn >p {
+    font-family: "nunitoSemiBold";
+    font-size: 13px;
+}
+
+.panel-btn-active {
+    color: var(--gray);
+}
+
+.panel-setting-btn {
+    width: 35px;
+    height: 35px;
+    background: var(--dark);
+    border-radius: 50%;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.panel-logout-btn {
+    width: 100px;
+    height: 25px;
+    background: var(--dark);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.panel-logout-btn:hover {
+    background: var(--darkGray);
+}
