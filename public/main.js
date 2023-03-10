@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require("electron");
-const path = require("path");   
+const path = require("path");
+const { ipcMain } = require("electron")
+const ipc = ipcMain;
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -9,11 +11,23 @@ function createWindow() {
         transparent: true,
         frame: false,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.resolve(__dirname, "preload.js"),
+            nodeIntegration: true,
+            contextIsolation: false
         }
     })
 
     win.loadFile("public/index.html")
+
+    // Actoins
+    ipc.on("closeApp", () => {
+        console.log('clicked on close btn');
+        win.close();
+    })
+
+    ipc.on("minimizeApp", () => {
+        win.minimize();
+    })
 }
 
 app.whenReady().then(() => {

@@ -11,14 +11,54 @@
     <link rel="stylesheet" href="../src/styleComponents/main.css">
     <link rel="stylesheet" href="../src/styleComponents/grid.css">
     <link rel="stylesheet" href="../src/styleComponents/Panel.css">
-
+    <link rel="stylesheet" href="../src/styleComponents/Titlebar.css">
 </head>
 
 <body>
     <div class="container text-dark">
 
         <!-- Title bar start -------------------------------------------------------------- -->
-        <section class="title-bar"></section>
+        <section class="title-bar" id="title-bar">
+            <!-- Search START -->
+            <div class="search-bar">
+
+                <div class="search-body">
+                    <label for="title-bar_search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input type="search" id="title-bar_search" class="title-bar-search" placeholder="Search Task ...">
+                </div>
+
+                <!-- Search conetnent START -->
+
+                <div class="search-content">
+                </div>
+                <!-- Search conetnent END -->
+            </div>
+
+            <!-- Search modal esc for exit form focuse -->
+            <div class="search-modal-esc"></div>
+
+            <!-- Search END -->
+
+            <!-- Drag widnow START -->
+            <div class="drag-winodw">
+                <i class="fa-solid fa-maximize"></i>
+            </div>
+            <!-- Drag widnow END -->
+
+            <!-- Action START -->
+            <div class="action" id="action">
+                <div class="esc" id="esc">
+                    X
+                </div>
+                <div class="minimize" id="minimize">
+                    -
+                </div>
+            </div>
+            <!-- Action END -->
+
+        </section>
         <!-- Title bar end -------------------------------------------------------------- -->
 
         <!-- Panel START ------------------------------------------------------------------- -->
@@ -74,6 +114,8 @@
 
     <!-- Script compoent -->
     <script src="../src/scriptComponent/Panel.js"></script>
+    <script src="../src/scriptcomponent/TitleBar.js"></script>
+
 </body>
 
 </html>

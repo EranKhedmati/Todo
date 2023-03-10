@@ -1,0 +1,127 @@
+/* z-index map
+    modal search esc => 1
+    search bar => 2
+*/
+
+:root {
+    --dark: #212121;
+    --light: #fff;
+}
+
+.container section.title-bar {
+    border-radius: 20px;
+}
+
+section.title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+/* Make Dragabel window */
+.drag-winodw {
+    background: var(--light);
+    -webkit-app-region: drag;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: grabbing;
+}
+
+
+/* Search bar ----------------------------------------------- */
+.search-bar {
+    color: var(--dark);
+    position: relative;
+    z-index: 2;
+}
+
+/* search body */
+
+.search-body {
+    width: 400px;
+    height: 30px;
+    background: var(--light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.search-body i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.title-bar-search {
+    width: 98%;
+   border-radius: 0 20px 20px 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px; 
+}
+
+input::-webkit-input-placeholder {
+    color: #9999;
+}
+
+/* Search Content */
+.search-content {
+    width: 100%;
+    height: 400px;
+    background: var(--light);
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+
+/* search modal esc */
+.search-modal-esc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    border-radius: 10px;
+    z-index: 1;
+    display: none;
+}
+
+/* Action ---------------------------------------*/
+.action {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding-right: 5px;
+}
+
+.action>div {
+    width: 30px;
+    height: 30px;
+    background: var(--light);
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: "nunitoBold";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.action>div:last-child {
+    font-size: 30px;
+}
+
